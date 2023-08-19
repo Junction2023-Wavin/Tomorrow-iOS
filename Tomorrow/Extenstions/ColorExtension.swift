@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
+
+extension Color {
+    static let tomorrowBlue = Color("tomorrowBlue")
+    static let tomorrowBlueHigh = Color("tomorrowBlueHigh")
+    static let tomorrowGray = Color("tomorrowGray")
+}
