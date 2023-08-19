@@ -34,18 +34,6 @@ final class APIManager {
         let header: HTTPHeaders = ["Content-Type": "application/json", "Accept": "application/json"]
         
         AF.request(goNextUrl, method: .post, parameters: param, encoder: JSONParameterEncoder.default, headers: header)
-//            .responseDecodable(of: SignInWithAppleResponse.self) { response in
-//                print("Request: \(String(describing: response.request))")
-//                print("Response: \(String(describing: response.response))")
-//                print("Result: \(response.result)")
-//
-//                switch response.result {
-//                case .success(let value):
-//                    print(value)
-//                case .failure(let error):
-//                    print(error)
-//                }
-//            }
             .responseData { response in
                 print("Request: \(String(describing: response.request))")
                 print("Response: \(String(describing: response.response))")
