@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct ClassDetailView: View {
-    @State private var isFavorite: Bool = true
+    var title: String = "A letter-finding program"
+    var description: String = "Target: Preschoolers"
+    
+    @State var isFavorite: Bool = false
+    var index: Int = 0
     
     var body: some View {
         VStack(spacing: 0) {
@@ -19,11 +23,11 @@ struct ClassDetailView: View {
                     // title
                     HStack {
                         VStack(alignment: .leading, spacing: 4) {
-                            Text("A letter-finding program")
+                            Text(title)
                                 .font(.pretendard(type: .semibold, size: 18))
                                 .foregroundColor(.tomorrowBlueHigh)
                             
-                            Text("Target: Preschoolers")
+                            Text(description)
                                 .font(.pretendard(type: .extraLight, size: 12))
                                 .foregroundColor(.tomorrowGray)
                         }
@@ -44,12 +48,18 @@ struct ClassDetailView: View {
                     
                     // lecture list
                     VStack(spacing: 12) {
-                        ForEach(1 ..< 12) { index in
+                        let data = index == 0 ? DummyData.firstLectures : DummyData.secondLectures
+                        let count = data.count
+                        
+                        ForEach(0 ..< count) { index in
                             NavigationLink {
-                                LectureDetailView()
+                                LectureDetailView(index: index == 0 ? 0 : 2,
+                                                  title: data[index].title,
+                                                  description: data[index].description)
                             } label: {
-                                LectureList(title: "\(index). Let's find 'GA'!",
-                                              description: "Find a letter of 'GA' to learn 'GA'")
+                                LectureList(image: data[index].image,
+                                            title: data[index].title,
+                                            description: data[index].description)
                             }
                         }
                     }
@@ -62,10 +72,12 @@ struct ClassDetailView: View {
             )
         }
         .edgesIgnoringSafeArea(.top)
+        .navigationTitle("")
     }
 }
 
 struct LectureList: View {
+    let image: String
     let title: String
     let description: String
     
@@ -79,7 +91,7 @@ struct LectureList: View {
             
             HStack {
                 // TODO: 이미지 url
-                Image("processDefault")
+                Image(image)
                     .resizable()
                     .frame(width: 56, height: 56)
                     .scaledToFill()
@@ -90,10 +102,14 @@ struct LectureList: View {
                     Text(title)
                         .font(.pretendard(type: .medium, size: 17))
                         .foregroundColor(.tomorrowGray)
+                        .lineLimit(1)
                     Text(description)
                         .font(.pretendard(type: .extraLight, size: 12))
                         .foregroundColor(.tomorrowGray)
+                        .lineLimit(1)
+                    HStack { Spacer() }
                 }
+//                .frame(width: 220)
                 .padding(.leading, 12)
                 
                 Spacer()

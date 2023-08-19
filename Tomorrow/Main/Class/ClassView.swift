@@ -44,12 +44,18 @@ struct ClassView: View {
                         
                         // class list
                         VStack(spacing: 12) {
-                            ForEach(1 ..< 12) { index in
+                            let data = DummyData.allClass
+                            let count = data.count
+                            
+                            ForEach(0 ..< count) { index in
                                 NavigationLink {
-                                    ClassDetailView()
+                                    ClassDetailView(title: data[index].title,
+                                                    description: data[index].description,
+                                                    isFavorite: true,
+                                                    index: index)
                                 } label: {
-                                    ClassList(title: "A letter-finding program",
-                                              description: "Target: Preschoolers")
+                                    ClassList(title: data[index].title,
+                                              description: data[index].description)
                                 }
                             }
                         }

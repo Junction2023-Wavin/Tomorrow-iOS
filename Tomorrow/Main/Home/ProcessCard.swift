@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProcessCard: View {
     let title: String
+    let image: String
     
     let presentProgress: Int
     let totalProgress: Int
@@ -27,7 +28,7 @@ struct ProcessCard: View {
             
             VStack(spacing: 0) {
                 ZStack {
-                    Image("processDefault")
+                    Image(image)
                         .resizable()
                         .frame(width: 100, height: 100)
                         .scaledToFill()
