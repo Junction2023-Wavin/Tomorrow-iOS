@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5142D7C22A9088EE00CB555E /* ScheduledList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142D7C12A9088EE00CB555E /* ScheduledList.swift */; };
+		5142D7C22A9088EE00CB555E /* ClassList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142D7C12A9088EE00CB555E /* ClassList.swift */; };
 		5142D7C42A908FDF00CB555E /* ClassDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142D7C32A908FDF00CB555E /* ClassDetailView.swift */; };
 		5142D7C72A909A6800CB555E /* CompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142D7C62A909A6800CB555E /* CompletedView.swift */; };
 		5142D7CA2A909B6500CB555E /* ClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142D7C92A909B6500CB555E /* ClassView.swift */; };
@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5142D7C12A9088EE00CB555E /* ScheduledList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledList.swift; sourceTree = "<group>"; };
+		5142D7C12A9088EE00CB555E /* ClassList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassList.swift; sourceTree = "<group>"; };
 		5142D7C32A908FDF00CB555E /* ClassDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailView.swift; sourceTree = "<group>"; };
 		5142D7C62A909A6800CB555E /* CompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedView.swift; sourceTree = "<group>"; };
 		5142D7C92A909B6500CB555E /* ClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassView.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 			children = (
 				51FA43A52A9065EE00BFD583 /* HomeView.swift */,
 				51C3526D2A9081670065770C /* ProcessCard.swift */,
-				5142D7C12A9088EE00CB555E /* ScheduledList.swift */,
+				5142D7C12A9088EE00CB555E /* ClassList.swift */,
 				5142D7C32A908FDF00CB555E /* ClassDetailView.swift */,
 			);
 			path = Home;
@@ -236,7 +236,7 @@
 				51FA43842A90546600BFD583 /* TomorrowApp.swift in Sources */,
 				51FA43A32A905C3E00BFD583 /* FontExtension.swift in Sources */,
 				5142D7C42A908FDF00CB555E /* ClassDetailView.swift in Sources */,
-				5142D7C22A9088EE00CB555E /* ScheduledList.swift in Sources */,
+				5142D7C22A9088EE00CB555E /* ClassList.swift in Sources */,
 				5142D7C72A909A6800CB555E /* CompletedView.swift in Sources */,
 				51C3526E2A9081670065770C /* ProcessCard.swift in Sources */,
 				51FA43A62A9065EE00BFD583 /* HomeView.swift in Sources */,

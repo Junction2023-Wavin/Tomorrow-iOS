@@ -74,7 +74,7 @@ struct HomeView: View {
                                 NavigationLink {
                                     ClassDetailView()
                                 } label: {
-                                    ScheduledList(title: "A letter-finding program",
+                                    ClassList(title: "A letter-finding program",
                                                   description: "Target: Preschoolers")
                                 }
                             }

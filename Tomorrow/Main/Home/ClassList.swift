@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ScheduledList: View {
+struct ClassList: View {
     let title: String
     let description: String
     

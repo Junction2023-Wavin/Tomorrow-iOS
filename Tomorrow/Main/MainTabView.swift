@@ -26,7 +26,7 @@ struct MainTabView: View {
                         .foregroundColor(.tomorrowBlue)
                 }
             
-            Text("Third Tab Content")
+            ClassView()
                 .tabItem {
                     Image(systemName: "3.circle")
                     Text("PROGRAM")

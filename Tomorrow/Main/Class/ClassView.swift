@@ -55,8 +55,8 @@ struct ClassView: View {
                     // lecture list
                     VStack(spacing: 12) {
                         ForEach(1 ..< 12) { index in
-                            LectureList(title: "\(index). Let's find 'GA'!",
-                                          description: "Find a letter of 'GA' to learn 'GA'")
+                            ClassList(title: "A letter-finding program",
+                                          description: "Target: Preschoolers")
                             .padding(.horizontal, 18)
                         }
                     }
