@@ -37,18 +37,21 @@ struct ClassView: View {
                             
                             Spacer()
                             
-                            Text("+Add")
-                                .font(.pretendard(type: .semibold, size: 16))
-                                .foregroundColor(.tomorrowBlueHigh)
-                                .background {
-                                    Rectangle()
-                                        .foregroundColor(.clear)
-                                        .frame(width: 56, height: 27)
-                                        .background(.white)
-                                        .cornerRadius(12)
-                                        .shadow(color: Color.shadowGray, radius: 2, x: 0, y: 1)
-                                    
-                                }
+                            NavigationLink {
+                                AddClassView()
+                            } label: {
+                                Text("+Add")
+                                    .font(.pretendard(type: .semibold, size: 16))
+                                    .foregroundColor(.tomorrowBlueHigh)
+                                    .background {
+                                        Rectangle()
+                                            .foregroundColor(.clear)
+                                            .frame(width: 56, height: 27)
+                                            .background(.white)
+                                            .cornerRadius(12)
+                                            .shadow(color: Color.shadowGray, radius: 2, x: 0, y: 1)
+                                    }
+                            }
                         }
                         .padding(.top, 28)
                         .padding(.horizontal, 18)
