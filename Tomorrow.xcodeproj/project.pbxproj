@@ -18,6 +18,7 @@
 		51FA43A02A905C3300BFD583 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51FA439C2A905C3300BFD583 /* Pretendard-Regular.otf */; };
 		51FA43A12A905C3300BFD583 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51FA439D2A905C3300BFD583 /* Pretendard-Medium.otf */; };
 		51FA43A32A905C3E00BFD583 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA43A22A905C3E00BFD583 /* FontExtension.swift */; };
+		51FA43A62A9065EE00BFD583 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA43A52A9065EE00BFD583 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		51FA439D2A905C3300BFD583 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		51FA43A22A905C3E00BFD583 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		51FA43A42A9061A700BFD583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		51FA43A52A9065EE00BFD583 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				51FA43942A9059FA00BFD583 /* MainTabView.swift */,
+				51FA43A72A9065F100BFD583 /* Home */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -112,6 +115,14 @@
 				51FA439A2A905C3300BFD583 /* Pretendard-SemiBold.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		51FA43A72A9065F100BFD583 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				51FA43A52A9065EE00BFD583 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 				51FA43982A905A4500BFD583 /* ColorExtension.swift in Sources */,
 				51FA43842A90546600BFD583 /* TomorrowApp.swift in Sources */,
 				51FA43A32A905C3E00BFD583 /* FontExtension.swift in Sources */,
+				51FA43A62A9065EE00BFD583 /* HomeView.swift in Sources */,
 				51FA43952A9059FA00BFD583 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
