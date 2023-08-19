@@ -22,14 +22,14 @@ struct IdTokenBody: Encodable {
     var index: Int
 }
 
-final class UserAPIManager {
-    static let shared = UserAPIManager()
+final class APIManager {
+    static let shared = APIManager()
     private init() {}
     
     private let apiUrl = Bundle.main.apiUrl
     
     func goNextPost(index: Int) {
-        let goNextUrl = apiUrl + "/api/users/auth/apple"
+        let goNextUrl = apiUrl + "/program/start/\(index)"
         let param = IdTokenBody(index: index)
         let header: HTTPHeaders = ["Content-Type": "application/json", "Accept": "application/json"]
         

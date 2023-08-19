@@ -43,9 +43,13 @@ struct LectureDetailView: View {
                     .padding(.horizontal, 18)
                     .padding(.bottom, 20)
                     
-                    RoundedRectangleButton(text: "Start")
-                        .padding(.vertical, 20)
-                        .padding(.horizontal, 18)
+                    Button {
+                        APIManager.shared.goNextPost(index: 2)
+                    } label: {
+                        RoundedRectangleButton(text: "Start")
+                            .padding(.vertical, 20)
+                            .padding(.horizontal, 18)
+                    }
                 }
             }
             .background(
