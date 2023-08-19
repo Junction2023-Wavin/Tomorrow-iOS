@@ -11,7 +11,19 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                TopNavigationBar(title: "Today's class")
+                ZStack {
+                    TopNavigationBar(title: "Today's class")
+                    HStack {
+                        Spacer()
+                        Button {
+                            // TODO: Navigate to My Page
+                        } label: {
+                            Image(systemName: "person")
+                                .font(.system(size: 23))
+                                .padding(5)
+                        }.padding(.top, 45).padding(.trailing, 10)
+                    }
+                }
                 
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 0) {
