@@ -28,7 +28,7 @@ final class APIManager {
     
     private let apiUrl = Bundle.main.apiUrl
     
-    func goNextPost(index: Int) {
+    func goNextPost(index: Int, completion: @escaping (_ isSucess: Bool) -> Void) {
         let goNextUrl = apiUrl + "/program/start/\(index)"
         let param = IdTokenBody(index: index)
         let header: HTTPHeaders = ["Content-Type": "application/json", "Accept": "application/json"]
@@ -43,6 +43,7 @@ final class APIManager {
                     if let jsonString = String(data: value, encoding: .utf8) {
                         print(jsonString)
                     }
+                    completion(true)
                 case .failure(let error):
                     print(error)
                 }

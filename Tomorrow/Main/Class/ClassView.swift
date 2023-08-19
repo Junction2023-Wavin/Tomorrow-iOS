@@ -51,7 +51,7 @@ struct ClassView: View {
                                 NavigationLink {
                                     ClassDetailView(title: data[index].title,
                                                     description: data[index].description,
-                                                    isFavorite: true,
+                                                    isFavorite: data[index].isFavorite,
                                                     index: index)
                                 } label: {
                                     ClassList(title: data[index].title,

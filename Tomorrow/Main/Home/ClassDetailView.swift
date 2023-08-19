@@ -14,6 +14,16 @@ struct ClassDetailView: View {
     @State var isFavorite: Bool = false
     var index: Int = 0
     
+    var data: [Lecture] {
+        if index == 0 {
+            return DummyData.firstLectures
+        } else if index == 5 {
+            return DummyData.englishLectures
+        } else {
+            return DummyData.secondLectures
+        }
+    }
+    
     var body: some View {
         VStack(spacing: 0) {
             TopNavigationBar(title: "Class")
@@ -48,18 +58,17 @@ struct ClassDetailView: View {
                     
                     // lecture list
                     VStack(spacing: 12) {
-                        let data = index == 0 ? DummyData.firstLectures : DummyData.secondLectures
                         let count = data.count
                         
-                        ForEach(0 ..< count) { index in
+                        ForEach(0 ..< count) { i in
                             NavigationLink {
-                                LectureDetailView(index: index == 0 ? 0 : 2,
-                                                  title: data[index].title,
-                                                  description: data[index].description)
+                                LectureDetailView(index: (index == 5 ? 5 : (i == 0 ? 0 : 2)),
+                                                  title: data[i].title,
+                                                  description: data[i].description)
                             } label: {
-                                LectureList(image: data[index].image,
-                                            title: data[index].title,
-                                            description: data[index].description)
+                                LectureList(image: data[i].image,
+                                            title: data[i].title,
+                                            description: data[i].description)
                             }
                         }
                     }

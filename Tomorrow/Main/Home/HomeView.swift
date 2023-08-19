@@ -47,13 +47,20 @@ struct HomeView: View {
                                 let count = data.count
                                 
                                 ForEach(0 ..< count) { index in
-                                    ProcessCard(title: data[index].title,
-                                                image: data[index].image,
-                                                presentProgress: data[index].present,
-                                                totalProgress: data[index].total)
-                                    .padding(.leading, index == 0 ? 18 : 0)
-                                    .padding(.trailing, index == (count - 1) ? 18 : 0)
-                                    .padding(.vertical, 20)
+                                    NavigationLink {
+                                        ClassDetailView(title: "English study",
+                                                        description: "Target: All ages",
+                                                        isFavorite: true,
+                                                        index: 5)
+                                    } label: {
+                                        ProcessCard(title: data[index].title,
+                                                    image: data[index].image,
+                                                    presentProgress: data[index].present,
+                                                    totalProgress: data[index].total)
+                                        .padding(.leading, index == 0 ? 18 : 0)
+                                        .padding(.trailing, index == (count - 1) ? 18 : 0)
+                                        .padding(.vertical, 20)
+                                    }
                                 }
                             }
                         }
@@ -77,7 +84,7 @@ struct HomeView: View {
                                 NavigationLink {
                                     ClassDetailView(title: data[index].title,
                                                     description: data[index].description,
-                                                    isFavorite: true,
+                                                    isFavorite: data[index].isFavorite,
                                                     index: index)
                                 } label: {
                                     ClassList(title: data[index].title,
