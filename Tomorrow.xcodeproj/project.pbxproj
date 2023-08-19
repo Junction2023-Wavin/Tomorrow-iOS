@@ -13,6 +13,11 @@
 		51FA43922A9054B500BFD583 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 51FA43912A9054B500BFD583 /* .gitignore */; };
 		51FA43952A9059FA00BFD583 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA43942A9059FA00BFD583 /* MainTabView.swift */; };
 		51FA43982A905A4500BFD583 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA43972A905A4500BFD583 /* ColorExtension.swift */; };
+		51FA439E2A905C3300BFD583 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51FA439A2A905C3300BFD583 /* Pretendard-SemiBold.otf */; };
+		51FA439F2A905C3300BFD583 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51FA439B2A905C3300BFD583 /* Pretendard-ExtraLight.otf */; };
+		51FA43A02A905C3300BFD583 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51FA439C2A905C3300BFD583 /* Pretendard-Regular.otf */; };
+		51FA43A12A905C3300BFD583 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51FA439D2A905C3300BFD583 /* Pretendard-Medium.otf */; };
+		51FA43A32A905C3E00BFD583 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA43A22A905C3E00BFD583 /* FontExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		51FA43912A9054B500BFD583 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		51FA43942A9059FA00BFD583 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		51FA43972A905A4500BFD583 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		51FA439A2A905C3300BFD583 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		51FA439B2A905C3300BFD583 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		51FA439C2A905C3300BFD583 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		51FA439D2A905C3300BFD583 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		51FA43A22A905C3E00BFD583 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +94,22 @@
 		51FA43962A905A0100BFD583 /* Extenstions */ = {
 			isa = PBXGroup;
 			children = (
+				51FA43992A905B7900BFD583 /* Font */,
 				51FA43972A905A4500BFD583 /* ColorExtension.swift */,
 			);
 			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		51FA43992A905B7900BFD583 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				51FA43A22A905C3E00BFD583 /* FontExtension.swift */,
+				51FA439B2A905C3300BFD583 /* Pretendard-ExtraLight.otf */,
+				51FA439D2A905C3300BFD583 /* Pretendard-Medium.otf */,
+				51FA439C2A905C3300BFD583 /* Pretendard-Regular.otf */,
+				51FA439A2A905C3300BFD583 /* Pretendard-SemiBold.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +170,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FA43A12A905C3300BFD583 /* Pretendard-Medium.otf in Resources */,
 				51FA438B2A90546700BFD583 /* Preview Assets.xcassets in Resources */,
+				51FA43A02A905C3300BFD583 /* Pretendard-Regular.otf in Resources */,
 				51FA43922A9054B500BFD583 /* .gitignore in Resources */,
+				51FA439F2A905C3300BFD583 /* Pretendard-ExtraLight.otf in Resources */,
 				51FA43882A90546700BFD583 /* Assets.xcassets in Resources */,
+				51FA439E2A905C3300BFD583 /* Pretendard-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +189,7 @@
 			files = (
 				51FA43982A905A4500BFD583 /* ColorExtension.swift in Sources */,
 				51FA43842A90546600BFD583 /* TomorrowApp.swift in Sources */,
+				51FA43A32A905C3E00BFD583 /* FontExtension.swift in Sources */,
 				51FA43952A9059FA00BFD583 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
