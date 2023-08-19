@@ -33,7 +33,7 @@ struct MainTabView: View {
             ClassView()
                 .tabItem {
                     Image(selectedTab == 2 ? "tabbedClass" : "unTabbedClass")
-                    Text("PROGRAM")
+                    Text("CLASS")
                         .font(.pretendard(type: .regular, size: 12))
                         .foregroundColor(.tomorrowBlue)
                 }
