@@ -12,21 +12,7 @@ struct ClassDetailView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            ZStack(alignment: .bottom) {
-                Rectangle()
-                    .foregroundColor(.white)
-                    .frame(height: 106)
-                    .shadow(color: .shadowGray, radius: 2, x: 0, y: 1)
-                
-                HStack {
-                    Spacer()
-                    Text("Class")
-                        .font(.pretendard(type: .semibold, size: 18))
-                        .foregroundColor(.tomorrowBlueHigh)
-                    Spacer()
-                }
-                .padding(.bottom, 18)
-            }
+            TopNavigationBar(title: "Class")
             
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 0) {

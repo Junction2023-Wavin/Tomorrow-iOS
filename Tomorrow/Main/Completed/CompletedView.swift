@@ -11,21 +11,7 @@ struct CompletedView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                ZStack(alignment: .bottom) {
-                    Rectangle()
-                        .foregroundColor(.white)
-                        .frame(height: 106)
-                        .shadow(color: .shadowGray, radius: 2, x: 0, y: 1)
-                    
-                    HStack {
-                        Spacer()
-                        Text("Manage last class")
-                            .font(.pretendard(type: .semibold, size: 18))
-                            .foregroundColor(.tomorrowBlueHigh)
-                        Spacer()
-                    }
-                    .padding(.bottom, 18)
-                }
+                TopNavigationBar(title: "Manage last class")
                 
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 0) {
@@ -90,6 +76,29 @@ struct CompletedView: View {
             .edgesIgnoringSafeArea(.top)
             .navigationTitle("")
         }
+    }
+}
+
+struct TopNavigationBar: View {
+    let title: String
+    
+    var body: some View {
+        ZStack(alignment: .bottom) {
+            Rectangle()
+                .foregroundColor(.white)
+                .frame(height: 106)
+                .shadow(color: .shadowGray, radius: 2, x: 0, y: 1)
+            
+            HStack {
+                Spacer()
+                Text(title)
+                    .font(.pretendard(type: .semibold, size: 18))
+                    .foregroundColor(.tomorrowBlueHigh)
+                Spacer()
+            }
+            .padding(.bottom, 18)
+        }
+        .padding(.bottom, 1)
     }
 }
 

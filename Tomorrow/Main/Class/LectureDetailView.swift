@@ -8,25 +8,9 @@
 import SwiftUI
 
 struct LectureDetailView: View {
-    let items = (0 ..< 7).map { "Item \($0)" }
-    
     var body: some View {
         VStack(spacing: 0) {
-            ZStack(alignment: .bottom) {
-                Rectangle()
-                    .foregroundColor(.topBarWhite)
-                    .frame(height: 106)
-                    .shadow(color: .shadowGray, radius: 2, x: 0, y: 1)
-                
-                HStack {
-                    Spacer()
-                    Text("Class")
-                        .font(.pretendard(type: .semibold, size: 18))
-                        .foregroundColor(.tomorrowBlueHigh)
-                    Spacer()
-                }
-                .padding(.bottom, 18)
-            }
+            TopNavigationBar(title: "Class")
             
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 0) {
@@ -49,14 +33,10 @@ struct LectureDetailView: View {
                     
                     // lecture list
                     LazyVGrid(columns: [GridItem(.flexible(), spacing: 16), GridItem(.flexible())], spacing: 20) {
-                        ForEach(items, id: \.self) { item in
-                            ZStack {
-                                Rectangle()
-                                    .foregroundColor(.clear)
-                                    .frame(height: 300)
-                                    .background(Color(red: 0.96, green: 0.96, blue: 0.96))
-                                Text(item)
-                            }
+                        ForEach(1 ..< 7, id: \.self) { item in
+                            Image("lecture2_\(item)")
+                                .resizable()
+                                .frame(height: 300)
                         }
                     }
                     .padding(.top, 20)
