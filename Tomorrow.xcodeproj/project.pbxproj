@@ -19,6 +19,7 @@
 		51E234072A90A0F1007E434E /* LectureDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E234062A90A0F1007E434E /* LectureDetailView.swift */; };
 		51E2340A2A90A557007E434E /* RoundedRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E234092A90A557007E434E /* RoundedRectangleButton.swift */; };
 		51E2340C2A90A7D2007E434E /* AddClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E2340B2A90A7D2007E434E /* AddClassView.swift */; };
+		51E2340E2A90F065007E434E /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E2340D2A90F065007E434E /* DummyData.swift */; };
 		51FA43842A90546600BFD583 /* TomorrowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA43832A90546600BFD583 /* TomorrowApp.swift */; };
 		51FA43882A90546700BFD583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FA43872A90546700BFD583 /* Assets.xcassets */; };
 		51FA438B2A90546700BFD583 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FA438A2A90546700BFD583 /* Preview Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		51E234062A90A0F1007E434E /* LectureDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureDetailView.swift; sourceTree = "<group>"; };
 		51E234092A90A557007E434E /* RoundedRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButton.swift; sourceTree = "<group>"; };
 		51E2340B2A90A7D2007E434E /* AddClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassView.swift; sourceTree = "<group>"; };
+		51E2340D2A90F065007E434E /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		51FA43802A90546600BFD583 /* Tomorrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomorrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FA43832A90546600BFD583 /* TomorrowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowApp.swift; sourceTree = "<group>"; };
 		51FA43872A90546700BFD583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				51FA43932A9059E100BFD583 /* Main */,
 				51FA43962A905A0100BFD583 /* Extenstions */,
 				51FA43832A90546600BFD583 /* TomorrowApp.swift */,
+				51E2340D2A90F065007E434E /* DummyData.swift */,
 				51FA43872A90546700BFD583 /* Assets.xcassets */,
 				51FA43892A90546700BFD583 /* Preview Content */,
 			);
@@ -286,6 +289,7 @@
 				5142D7C22A9088EE00CB555E /* ClassList.swift in Sources */,
 				5142D7C72A909A6800CB555E /* CompletedView.swift in Sources */,
 				51C3526E2A9081670065770C /* ProcessCard.swift in Sources */,
+				51E2340E2A90F065007E434E /* DummyData.swift in Sources */,
 				51E234072A90A0F1007E434E /* LectureDetailView.swift in Sources */,
 				51FA43A62A9065EE00BFD583 /* HomeView.swift in Sources */,
 				51FA43952A9059FA00BFD583 /* MainTabView.swift in Sources */,

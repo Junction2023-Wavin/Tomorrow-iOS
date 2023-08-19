@@ -43,22 +43,21 @@ struct HomeView: View {
                         // 진행중인 과정 카드 scrollview
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 12) {
-                                ProcessCard(title: "A dementia prevention project",
-                                            presentProgress: 6, totalProgress: 24)
-                                .padding(.leading, 18)
+                                let data = DummyData.homeProcess
+                                let count = data.count
                                 
-                                ForEach(1 ..< 4) { _ in
-                                    ProcessCard(title: "A dementia prevention project",
-                                                presentProgress: 13, totalProgress: 19)
+                                ForEach(0 ..< count) { index in
+                                    ProcessCard(title: data[index].title,
+                                                image: data[index].image,
+                                                presentProgress: data[index].present,
+                                                totalProgress: data[index].total)
+                                    .padding(.leading, index == 0 ? 18 : 0)
+                                    .padding(.trailing, index == (count - 1) ? 18 : 0)
+                                    .padding(.vertical, 20)
                                 }
-                                
-                                ProcessCard(title: "A dementia prevention project",
-                                            presentProgress: 6, totalProgress: 24)
-                                .padding(.trailing, 18)
                             }
                         }
-                        .padding(.top, 20)
-                        .padding(.bottom, 34)
+                        .padding(.bottom, 14)
                         
                         // Scheduled title
                         HStack {
@@ -71,12 +70,18 @@ struct HomeView: View {
                         
                         // Scheduled 리스트
                         VStack(spacing: 12) {
-                            ForEach(1 ..< 6) { _ in
+                            let data = DummyData.homeClass
+                            let count = data.count
+                            
+                            ForEach(0 ..< count) { index in
                                 NavigationLink {
-                                    ClassDetailView()
+                                    ClassDetailView(title: data[index].title,
+                                                    description: data[index].description,
+                                                    isFavorite: true,
+                                                    index: index)
                                 } label: {
-                                    ClassList(title: "A letter-finding program",
-                                              description: "Target: Preschoolers")
+                                    ClassList(title: data[index].title,
+                                              description: data[index].description)
                                 }
                             }
                         }

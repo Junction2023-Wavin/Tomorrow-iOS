@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainTabView: View {
-    @State private var selectedTab: Int = 0
+    @State private var selectedTab: Int = 1
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -33,7 +33,7 @@ struct MainTabView: View {
             ClassView()
                 .tabItem {
                     Image(selectedTab == 2 ? "tabbedClass" : "unTabbedClass")
-                    Text("PROGRAM")
+                    Text("CLASS")
                         .font(.pretendard(type: .regular, size: 12))
                         .foregroundColor(.tomorrowBlue)
                 }
