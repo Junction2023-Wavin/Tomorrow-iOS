@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ClassView: View {
+struct ClassDetailView: View {
     @State private var isFavorite: Bool = true
     
     var body: some View {
@@ -116,8 +116,8 @@ struct LectureList: View {
     }
 }
 
-struct ClassView_Previews: PreviewProvider {
+struct ClassDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ClassView()
+        ClassDetailView()
     }
 }

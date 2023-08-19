@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  CompletedView.swift
 //  Tomorrow
 //
 //  Created by 이안진 on 2023/08/19.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct CompletedView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
@@ -19,7 +19,7 @@ struct HomeView: View {
                     
                     HStack {
                         Spacer()
-                        Text("Today's class")
+                        Text("Manage last class")
                             .font(.pretendard(type: .semibold, size: 18))
                             .foregroundColor(.tomorrowBlueHigh)
                         Spacer()
@@ -61,7 +61,7 @@ struct HomeView: View {
                         
                         // Scheduled title
                         HStack {
-                            Text("Scheduled")
+                            Text("Completed")
                                 .font(.pretendard(type: .semibold, size: 18))
                                 .foregroundColor(.tomorrowBlueHigh)
                             Spacer()
@@ -93,8 +93,8 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct CompletedView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        CompletedView()
     }
 }

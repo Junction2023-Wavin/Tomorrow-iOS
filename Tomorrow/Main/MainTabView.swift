@@ -10,7 +10,7 @@ import SwiftUI
 struct MainTabView: View {
     var body: some View {
         TabView {
-            Text("First Tab Content")
+            CompletedView()
                 .tabItem {
                     Image(systemName: "1.circle")
                     Text("CLASS")
