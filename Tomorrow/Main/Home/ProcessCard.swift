@@ -27,7 +27,6 @@ struct ProcessCard: View {
             
             VStack(spacing: 0) {
                 ZStack {
-                    // TODO: 이미지 변경
                     Image("processDefault")
                         .resizable()
                         .frame(width: 100, height: 100)
