@@ -8,31 +8,36 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @State private var selectedTab: Int = 0
+    
     var body: some View {
-        TabView {
-            Text("First Tab Content")
+        TabView(selection: $selectedTab) {
+            CompletedView()
                 .tabItem {
-                    Image(systemName: "1.circle")
-                    Text("CLASS")
+                    Image(selectedTab == 0 ? "tabbedCompleted" : "unTabbedCompleted")
+                    Text("COMPLETED")
                         .font(.pretendard(type: .regular, size: 12))
                         .foregroundColor(.tomorrowBlue)
                 }
+                .tag(0)
             
             HomeView()
                 .tabItem {
-                    Image(systemName: "2.circle")
+                    Image(selectedTab == 1 ? "tabbedHome" : "unTabbedHome")
                     Text("HOME")
                         .font(.pretendard(type: .regular, size: 12))
                         .foregroundColor(.tomorrowBlue)
                 }
+                .tag(1)
             
-            Text("Third Tab Content")
+            ClassView()
                 .tabItem {
-                    Image(systemName: "3.circle")
+                    Image(selectedTab == 2 ? "tabbedClass" : "unTabbedClass")
                     Text("PROGRAM")
                         .font(.pretendard(type: .regular, size: 12))
                         .foregroundColor(.tomorrowBlue)
                 }
+                .tag(2)
         }
     }
 }

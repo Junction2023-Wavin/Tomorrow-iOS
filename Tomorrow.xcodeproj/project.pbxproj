@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5142D7C22A9088EE00CB555E /* ClassList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142D7C12A9088EE00CB555E /* ClassList.swift */; };
+		5142D7C42A908FDF00CB555E /* ClassDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142D7C32A908FDF00CB555E /* ClassDetailView.swift */; };
+		5142D7C72A909A6800CB555E /* CompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142D7C62A909A6800CB555E /* CompletedView.swift */; };
+		5142D7CA2A909B6500CB555E /* ClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142D7C92A909B6500CB555E /* ClassView.swift */; };
+		51C3526E2A9081670065770C /* ProcessCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C3526D2A9081670065770C /* ProcessCard.swift */; };
+		51E234072A90A0F1007E434E /* LectureDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E234062A90A0F1007E434E /* LectureDetailView.swift */; };
+		51E2340A2A90A557007E434E /* RoundedRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E234092A90A557007E434E /* RoundedRectangleButton.swift */; };
+		51E2340C2A90A7D2007E434E /* AddClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E2340B2A90A7D2007E434E /* AddClassView.swift */; };
 		51FA43842A90546600BFD583 /* TomorrowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA43832A90546600BFD583 /* TomorrowApp.swift */; };
 		51FA43882A90546700BFD583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FA43872A90546700BFD583 /* Assets.xcassets */; };
 		51FA438B2A90546700BFD583 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FA438A2A90546700BFD583 /* Preview Assets.xcassets */; };
@@ -22,6 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5142D7C12A9088EE00CB555E /* ClassList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassList.swift; sourceTree = "<group>"; };
+		5142D7C32A908FDF00CB555E /* ClassDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailView.swift; sourceTree = "<group>"; };
+		5142D7C62A909A6800CB555E /* CompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedView.swift; sourceTree = "<group>"; };
+		5142D7C92A909B6500CB555E /* ClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassView.swift; sourceTree = "<group>"; };
+		51C3526D2A9081670065770C /* ProcessCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessCard.swift; sourceTree = "<group>"; };
+		51E234062A90A0F1007E434E /* LectureDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureDetailView.swift; sourceTree = "<group>"; };
+		51E234092A90A557007E434E /* RoundedRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButton.swift; sourceTree = "<group>"; };
+		51E2340B2A90A7D2007E434E /* AddClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassView.swift; sourceTree = "<group>"; };
 		51FA43802A90546600BFD583 /* Tomorrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomorrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FA43832A90546600BFD583 /* TomorrowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowApp.swift; sourceTree = "<group>"; };
 		51FA43872A90546700BFD583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +65,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5142D7C52A909A5400CB555E /* Completed */ = {
+			isa = PBXGroup;
+			children = (
+				5142D7C62A909A6800CB555E /* CompletedView.swift */,
+			);
+			path = Completed;
+			sourceTree = "<group>";
+		};
+		5142D7C82A909B5100CB555E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5142D7C92A909B6500CB555E /* ClassView.swift */,
+				51E234062A90A0F1007E434E /* LectureDetailView.swift */,
+				51E2340B2A90A7D2007E434E /* AddClassView.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		51E234082A90A53A007E434E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				51E234092A90A557007E434E /* RoundedRectangleButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		51FA43772A90546600BFD583 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				51FA43A42A9061A700BFD583 /* Info.plist */,
+				51E234082A90A53A007E434E /* Components */,
 				51FA43932A9059E100BFD583 /* Main */,
 				51FA43962A905A0100BFD583 /* Extenstions */,
 				51FA43832A90546600BFD583 /* TomorrowApp.swift */,
@@ -91,7 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				51FA43942A9059FA00BFD583 /* MainTabView.swift */,
+				5142D7C52A909A5400CB555E /* Completed */,
 				51FA43A72A9065F100BFD583 /* Home */,
+				5142D7C82A909B5100CB555E /* Class */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -121,6 +166,9 @@
 			isa = PBXGroup;
 			children = (
 				51FA43A52A9065EE00BFD583 /* HomeView.swift */,
+				51C3526D2A9081670065770C /* ProcessCard.swift */,
+				5142D7C12A9088EE00CB555E /* ClassList.swift */,
+				5142D7C32A908FDF00CB555E /* ClassDetailView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -201,8 +249,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				51FA43982A905A4500BFD583 /* ColorExtension.swift in Sources */,
+				51E2340A2A90A557007E434E /* RoundedRectangleButton.swift in Sources */,
+				51E2340C2A90A7D2007E434E /* AddClassView.swift in Sources */,
+				5142D7CA2A909B6500CB555E /* ClassView.swift in Sources */,
 				51FA43842A90546600BFD583 /* TomorrowApp.swift in Sources */,
 				51FA43A32A905C3E00BFD583 /* FontExtension.swift in Sources */,
+				5142D7C42A908FDF00CB555E /* ClassDetailView.swift in Sources */,
+				5142D7C22A9088EE00CB555E /* ClassList.swift in Sources */,
+				5142D7C72A909A6800CB555E /* CompletedView.swift in Sources */,
+				51C3526E2A9081670065770C /* ProcessCard.swift in Sources */,
+				51E234072A90A0F1007E434E /* LectureDetailView.swift in Sources */,
 				51FA43A62A9065EE00BFD583 /* HomeView.swift in Sources */,
 				51FA43952A9059FA00BFD583 /* MainTabView.swift in Sources */,
 			);
