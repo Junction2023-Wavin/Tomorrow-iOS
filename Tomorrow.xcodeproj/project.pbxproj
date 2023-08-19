@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5142D7C22A9088EE00CB555E /* ScheduledList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142D7C12A9088EE00CB555E /* ScheduledList.swift */; };
 		51C3526E2A9081670065770C /* ProcessCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C3526D2A9081670065770C /* ProcessCard.swift */; };
 		51FA43842A90546600BFD583 /* TomorrowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA43832A90546600BFD583 /* TomorrowApp.swift */; };
 		51FA43882A90546700BFD583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FA43872A90546700BFD583 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5142D7C12A9088EE00CB555E /* ScheduledList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledList.swift; sourceTree = "<group>"; };
 		51C3526D2A9081670065770C /* ProcessCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessCard.swift; sourceTree = "<group>"; };
 		51FA43802A90546600BFD583 /* Tomorrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomorrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FA43832A90546600BFD583 /* TomorrowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowApp.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				51FA43A52A9065EE00BFD583 /* HomeView.swift */,
 				51C3526D2A9081670065770C /* ProcessCard.swift */,
+				5142D7C12A9088EE00CB555E /* ScheduledList.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				51FA43982A905A4500BFD583 /* ColorExtension.swift in Sources */,
 				51FA43842A90546600BFD583 /* TomorrowApp.swift in Sources */,
 				51FA43A32A905C3E00BFD583 /* FontExtension.swift in Sources */,
+				5142D7C22A9088EE00CB555E /* ScheduledList.swift in Sources */,
 				51C3526E2A9081670065770C /* ProcessCard.swift in Sources */,
 				51FA43A62A9065EE00BFD583 /* HomeView.swift in Sources */,
 				51FA43952A9059FA00BFD583 /* MainTabView.swift in Sources */,
