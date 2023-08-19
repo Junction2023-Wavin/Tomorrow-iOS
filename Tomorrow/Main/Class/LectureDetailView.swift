@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct LectureDetailView: View {
-    var index: Int = 2
-    var title: String = "1. Let's find 'GA'!"
-    var description: String = "Find a letter of 'GA' to learn 'GA'"
+    var index: Int
+    var title: String
+    var description: String
     
     var lectureImages: [String] {
         if index == 0 {
