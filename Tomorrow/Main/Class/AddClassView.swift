@@ -65,13 +65,42 @@ struct AddClassView: View {
                         .foregroundColor(.tomorrowBlueHigh)
                         .padding(.bottom, 12)
                     
+                    
+                    HStack {
+                        Spacer()
+                        VStack {
+                            Button {
+                                // TODO: 이미지선택?
+                            } label: {
+                                Image(systemName: "plus")
+                                    .font(.system(size: 13.14))
+                                    .foregroundColor(Color.plusGray)
+                                    .padding(31.43)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 5.2)
+                                            .foregroundColor(Color.buttonGray)
+                                    )
+                            }
+                            Text("사진을 추가해주세요")
+                                .font(.pretendard(type: .regular, size: 16))
+                                .padding(.top, 11.5)
+                        }
+                        Spacer()
+                    }.frame(minHeight: 275).background(
+                        RoundedRectangle(cornerRadius: 7)
+                            .inset(by: 0.38)
+                            .stroke(style: StrokeStyle(lineWidth: 0.75))
+                            .foregroundColor(Color.plusGray)
+                    )
+                        
+
                     RoundedRectangle(cornerRadius: 8)
                         .frame(height: 272)
-                        .foregroundColor(.shadowGray)
-                        .padding(.bottom, 24)
-                    
+                        .foregroundColor(.white)
+                        
                     RoundedRectangleButton(text: "Start")
                         .padding(.vertical, 20)
+                        .padding(.top, 24)
                 }
             }
             .padding(.horizontal, 18)
