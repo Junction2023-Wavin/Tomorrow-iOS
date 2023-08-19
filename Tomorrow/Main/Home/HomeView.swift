@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var isMyPagePresented: Bool = false
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
@@ -15,13 +17,14 @@ struct HomeView: View {
                     TopNavigationBar(title: "Today's class")
                     HStack {
                         Spacer()
-                        Button {
-                            // TODO: Navigate to My Page
+                        NavigationLink {
+                            MyPage()
                         } label: {
                             Image(systemName: "person")
                                 .font(.system(size: 23))
                                 .padding(5)
-                        }.padding(.top, 45).padding(.trailing, 10)
+                                .padding(.top, 45).padding(.trailing, 10)
+                        }
                     }
                 }
                 
@@ -73,7 +76,7 @@ struct HomeView: View {
                                     ClassDetailView()
                                 } label: {
                                     ClassList(title: "A letter-finding program",
-                                                  description: "Target: Preschoolers")
+                                              description: "Target: Preschoolers")
                                 }
                             }
                         }
