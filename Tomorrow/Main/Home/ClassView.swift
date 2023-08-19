@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ClassView: View {
-    var isFavorite: Bool = true
+    @State private var isFavorite: Bool = true
     
     var body: some View {
         VStack(spacing: 0) {
             ZStack(alignment: .bottom) {
                 Rectangle()
                     .foregroundColor(.white)
-                    .frame(height: 108)
+                    .frame(height: 106)
                     .shadow(color: .shadowGray, radius: 2, x: 0, y: 1)
                 
                 HStack {
@@ -44,9 +44,8 @@ struct ClassView: View {
                         
                         Spacer()
                         
-                        // TODO: 북마크 기능 추가
                         Button {
-                            
+                            isFavorite.toggle()
                         } label: {
                             Image(systemName: isFavorite ? "star.fill" : "star")
                                 .resizable()

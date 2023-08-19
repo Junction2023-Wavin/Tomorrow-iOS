@@ -14,7 +14,7 @@ struct HomeView: View {
                 ZStack(alignment: .bottom) {
                     Rectangle()
                         .foregroundColor(.white)
-                        .frame(height: 108)
+                        .frame(height: 106)
                         .shadow(color: .shadowGray, radius: 2, x: 0, y: 1)
                     
                     HStack {
