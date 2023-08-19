@@ -22,7 +22,6 @@ struct ProcessCard: View {
             Rectangle()
                 .foregroundColor(.white)
                 .frame(width: 200, height: 200)
-                .overlay(Text("0"))
                 .cornerRadius(10)
                 .shadow(color: Color.shadowGray, radius: 5, x: 0, y: 0)
             

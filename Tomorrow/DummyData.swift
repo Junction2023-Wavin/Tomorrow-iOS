@@ -9,48 +9,39 @@ import Foundation
 
 struct DummyData: Hashable {
     static let completedProcess: [Process] = [
-        Process(present: 6, total: 24, title: "English Study", image: "processDefault"),
-        Process(present: 7, total: 19, title: "A dementia prevention project", image: "lecture2_3"),
-        Process(present: 10, total: 18, title: "A dementia prevention project", image: "processDefault"),
-        Process(present: 6, total: 24, title: "A dementia prevention project", image: "processDefault"),
-        Process(present: 6, total: 24, title: "A dementia prevention project", image: "processDefault"),
-        Process(present: 6, total: 24, title: "A dementia prevention project", image: "processDefault"),
-        Process(present: 6, total: 24, title: "A dementia prevention project", image: "processDefault")]
+        Process(present: 6, total: 24, title: "English Study", image: "process1"),
+        Process(present: 8, total: 28, title: "A dementia prevention project", image: "process2"),
+        Process(present: 10, total: 18, title: "Korean Study", image: "processDefault")
+    ]
     
     static let completedClass: [Class] = [
-        Class(title: "Korean traditional manners", description: "Target: a multicultural family")
+        Class(title: "A letter-finding program", description: "Target: Preschoolers", isFavorite: true),
+        Class(title: "the basics of learning Chinese", description: "Target: welfare center user", isFavorite: true)
     ]
     
     static let homeProcess: [Process] = [
-        Process(present: 6, total: 24, title: "A dementia prevention project", image: "processDefault"),
-        Process(present: 7, total: 19, title: "A dementia prevention project", image: "lecture2_3"),
-        Process(present: 10, total: 18, title: "A dementia prevention project", image: "processDefault"),
-        Process(present: 6, total: 24, title: "A dementia prevention project", image: "processDefault"),
-        Process(present: 6, total: 24, title: "A dementia prevention project", image: "processDefault"),
-        Process(present: 6, total: 24, title: "A dementia prevention project", image: "processDefault"),
-        Process(present: 6, total: 24, title: "A dementia prevention project", image: "processDefault")]
+        Process(present: 6, total: 24, title: "English Study", image: "process1"),
+        Process(present: 8, total: 28, title: "A dementia prevention project", image: "process2"),
+        Process(present: 10, total: 18, title: "Korean Study", image: "processDefault")
+    ]
     
     static let homeClass: [Class] = [
-        Class(title: "A dementia prevention program", description: "Target: An old man"),
-        Class(title: "A letter-finding program", description: "Target: Preschoolers"),
-        Class(title: "Basic Korean Language Education", description: "Target: a multicultural child"),
-        Class(title: "Korean Language Learned by Play", description: "Target: low-income children"),
-        Class(title: "Korean traditional manners", description: "Target: a multicultural family"),
-        Class(title: "the basics of learning Chinese", description: "Target: welfare center user")
+        Class(title: "Basic Korean Language Education", description: "Target: a multicultural child", isFavorite: true),
+        Class(title: "Korean Language Learned by Play", description: "Target: low-income children", isFavorite: true)
     ]
     
     static let allClass: [Class] = [
         Class(title: "A dementia prevention program", description: "Target: An old man"),
-        Class(title: "A letter-finding program", description: "Target: Preschoolers"),
-        Class(title: "Basic Korean Language Education", description: "Target: a multicultural child"),
-        Class(title: "Korean Language Learned by Play", description: "Target: low-income children"),
+        Class(title: "A letter-finding program", description: "Target: Preschoolers", isFavorite: true),
+        Class(title: "Basic Korean Language Education", description: "Target: a multicultural child", isFavorite: true),
+        Class(title: "Korean Language Learned by Play", description: "Target: low-income children", isFavorite: true),
         Class(title: "Korean traditional manners", description: "Target: a multicultural family"),
-        Class(title: "the basics of learning Chinese", description: "Target: welfare center user")
+        Class(title: "the basics of learning Chinese", description: "Target: welfare center user", isFavorite: true)
     ]
     
     static let firstLectures: [Lecture] = [
         Lecture(image: "lecture1", title: "1. Improve Spatial perception", description: "This is a dementia prevention question."),
-        Lecture(image: "lecture2", title: "2. Frontal lobe training", description: "Strengthening Cognition to Prevent ···"),
+        Lecture(image: "lecture2", title: "2. Frontal lobe training", description: "Strengthening Cognition to Prevent..."),
         Lecture(image: "lecture3", title: "3. Emergency response", description: "a code of conduct"),
         Lecture(image: "lecture4", title: "4. Find the wrong picture", description: "brain training"),
         Lecture(image: "lecture5", title: "5. Dementia Prevention Act", description: "Taking care of patients"),
@@ -73,6 +64,17 @@ struct DummyData: Hashable {
         Lecture(image: "lectureI", title: "9. Learning words", description: "over and over again"),
         Lecture(image: "lectureJ", title: "10. first step in Japanese", description: "There is no age for learning")
     ]
+    
+    static let englishLectures: [Lecture] = [
+        Lecture(image: "peach", title: "1. Words for beginner", description: "A to Z"),
+        Lecture(image: "book", title: "2. Be verbe", description: "How to use be verbe"),
+        Lecture(image: "clock", title: "3. Objects", description: "Words in daily life"),
+        Lecture(image: "megaphone", title: "4. A greeting message 1", description: "Greetings to people"),
+        Lecture(image: "megaphone", title: "5. A greeting message 2", description: "A greeting at the first meeting"),
+        Lecture(image: "megaphone", title: "6. A greeting message 3", description: "A greeting at the second meeting"),
+        Lecture(image: "airplane", title: "7. Trend Travel English", description: "making a free trip"),
+        Lecture(image: "airplane", title: "8. Travel", description: "Introduce myself")
+    ]
 }
 
 struct Process {
@@ -82,6 +84,7 @@ struct Process {
 
 struct Class {
     let title, description: String
+    var isFavorite: Bool = false
 }
 
 struct Lecture {

@@ -15,7 +15,7 @@ struct MainTabView: View {
             CompletedView()
                 .tabItem {
                     Image(selectedTab == 0 ? "tabbedCompleted" : "unTabbedCompleted")
-                    Text("COMPLETED")
+                    Text("HISTORY")
                         .font(.pretendard(type: .regular, size: 12))
                         .foregroundColor(.tomorrowBlue)
                 }

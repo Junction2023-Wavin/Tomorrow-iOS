@@ -12,8 +12,18 @@ struct LectureDetailView: View {
     var title: String = "1. Let's find 'GA'!"
     var description: String = "Find a letter of 'GA' to learn 'GA'"
     
-    @State private var isStarted: Bool = true
-    @State private var imageIndex: Int = 1
+    var lectureImages: [String] {
+        if index == 0 {
+            return ["lecture1_1", "lecture1_2", "lecture1_3", "lecture1_4", "lecture1_5"]
+        } else if index == 5 {
+            return ["apple", "orange", "banana"]
+        } else {
+            return ["lecture2_1", "lecture2_2", "lecture2_3", "lecture2_4", "lecture2_5", "lecture2_6"]
+        }
+    }
+    
+    @State private var isStarted: Bool = false
+    @State private var imageIndex: Int = 0
     
     var body: some View {
         ZStack {
@@ -41,18 +51,10 @@ struct LectureDetailView: View {
                         
                         // lecture list
                         LazyVGrid(columns: [GridItem(.flexible(), spacing: 16), GridItem(.flexible())], spacing: 20) {
-                            if index == 0 {
-                                ForEach(1 ..< 6, id: \.self) { item in
-                                    Image("lecture1_\(item)")
-                                        .resizable()
-                                        .frame(height: 300)
-                                }
-                            } else {
-                                ForEach(1 ..< 7, id: \.self) { item in
-                                    Image("lecture2_\(item)")
-                                        .resizable()
-                                        .frame(height: 300)
-                                }
+                            ForEach(lectureImages, id: \.self) { image in
+                                Image(image)
+                                    .resizable()
+                                    .frame(height: 300)
                             }
                         }
                         .padding(.top, 20)
@@ -60,7 +62,11 @@ struct LectureDetailView: View {
                         .padding(.bottom, 20)
                         
                         Button {
-                            APIManager.shared.goNextPost(index: 1)
+                            APIManager.shared.goNextPost(index: 3) { isSuccess in
+                                if isSuccess {
+                                    isStarted = true
+                                }
+                            }
                         } label: {
                             RoundedRectangleButton(text: "Start")
                                 .padding(.vertical, 20)
@@ -87,7 +93,7 @@ struct LectureDetailView: View {
                 .ignoresSafeArea()
             
             ZStack(alignment: .topTrailing) {
-                Image("lecture\(index == 0 ? 1 : 2)_\(imageIndex)")
+                Image(lectureImages[imageIndex])
                     .resizable()
                     .scaledToFill()
                     .frame(width: 300, height: 520)
@@ -104,7 +110,7 @@ struct LectureDetailView: View {
             }
             
             HStack(alignment: .center) {
-                if imageIndex != 1 {
+                if imageIndex != 0 {
                     Button {
                         imageIndex -= 1
                     } label: {
@@ -114,7 +120,7 @@ struct LectureDetailView: View {
                 
                 Spacer()
                 
-                if imageIndex != (index == 0 ? 5 : 6) {
+                if imageIndex != (lectureImages.count - 1) {
                     Button {
                         imageIndex += 1
                     } label: {
