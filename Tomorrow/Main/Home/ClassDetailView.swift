@@ -120,7 +120,7 @@ struct RegisterModal: View {
                     Button {
                         self.isModalPresented = false
                     } label: {
-                        Text("No").font(.pretendard(type: .medium, size: 16)).foregroundColor(.white).frame(width: 126, height: 36).background(Color.buttonGray).cornerRadius(10)
+                        Text("No").font(.pretendard(type: .medium, size: 16)).foregroundColor(.white).frame(width: 126, height: 36).background(Color.tomorrowBlue).cornerRadius(10)
                     }
                 }
             }.frame(maxHeight: 180).padding(.horizontal, 28)

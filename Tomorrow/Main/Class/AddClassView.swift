@@ -98,7 +98,7 @@ struct AddClassView: View {
                         .frame(height: 272)
                         .foregroundColor(.white)
                         
-                    RoundedRectangleButton(text: "Start")
+                    RoundedRectangleButton(text: "Add")
                         .padding(.vertical, 20)
                         .padding(.top, 24)
                 }

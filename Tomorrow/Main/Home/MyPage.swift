@@ -67,9 +67,8 @@ struct MyPage: View {
                         .foregroundColor(.tomorrowGray)
                     Spacer()
                 }
-            }
+            }.padding(.horizontal, 38)
             Spacer()
-        }.padding(.horizontal, 38)
-            .edgesIgnoringSafeArea(.top)
+        }.edgesIgnoringSafeArea(.top)
     }
 }

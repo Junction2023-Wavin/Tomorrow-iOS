@@ -112,7 +112,6 @@
 		51FA43772A90546600BFD583 = {
 			isa = PBXGroup;
 			children = (
-				0EEA96482A90F0F20014BD06 /* ServerMinsu.plist */,
 				51FA43912A9054B500BFD583 /* .gitignore */,
 				51FA43822A90546600BFD583 /* Tomorrow */,
 				51FA43812A90546600BFD583 /* Products */,
@@ -131,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				51FA43A42A9061A700BFD583 /* Info.plist */,
+				0EEA96482A90F0F20014BD06 /* ServerMinsu.plist */,
 				51E234082A90A53A007E434E /* Components */,
 				51FA43932A9059E100BFD583 /* Main */,
 				51FA43962A905A0100BFD583 /* Extenstions */,
@@ -428,7 +428,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -459,7 +459,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (

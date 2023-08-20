@@ -37,6 +37,7 @@ struct ClassView: View {
                                             .cornerRadius(12)
                                             .shadow(color: Color.shadowGray, radius: 2, x: 0, y: 1)
                                     }
+                                    .padding(.trailing, 8)
                             }
                         }
                         .padding(.top, 28)
