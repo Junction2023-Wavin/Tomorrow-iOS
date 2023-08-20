@@ -62,7 +62,7 @@ struct LectureDetailView: View {
                         .padding(.bottom, 20)
                         
                         Button {
-                            APIManager.shared.goNextPost(index: 3) { isSuccess in
+                            APIManager.shared.goNextPost(index: 1) { isSuccess in
                                 if isSuccess {
                                     isStarted = true
                                 }
@@ -104,7 +104,7 @@ struct LectureDetailView: View {
                     Image(systemName: "xmark")
                         .resizable()
                         .frame(width: 16, height: 16)
-                        .foregroundColor(.white)
+                        .foregroundColor(.tomorrowBlue)
                         .padding(16)
                 }
             }
@@ -113,6 +113,9 @@ struct LectureDetailView: View {
                 if imageIndex != 0 {
                     Button {
                         imageIndex -= 1
+                        APIManager.shared.goNextPost(index: imageIndex+1) { isSuccess in
+                            
+                        }
                     } label: {
                         Image("leftButton")
                     }
@@ -123,6 +126,9 @@ struct LectureDetailView: View {
                 if imageIndex != (lectureImages.count - 1) {
                     Button {
                         imageIndex += 1
+                        APIManager.shared.goNextPost(index: imageIndex+1) { isSuccess in
+                            
+                        }
                     } label: {
                         Image("rightButton")
                     }
