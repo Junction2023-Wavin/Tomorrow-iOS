@@ -11,7 +11,20 @@ struct CompletedView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                TopNavigationBar(title: "Manage last class")
+                ZStack {
+                    TopNavigationBar(title: "Manage last class")
+                    HStack {
+                        Spacer()
+                        NavigationLink {
+                            MyPage()
+                        } label: {
+                            Image(systemName: "person")
+                                .font(.system(size: 23))
+                                .padding(5)
+                                .padding(.top, 45).padding(.trailing, 10)
+                        }
+                    }
+                }
                 
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 0) {
@@ -70,7 +83,7 @@ struct CompletedView: View {
                                     ClassDetailView(title: data[index].title,
                                                     description: data[index].description,
                                                     isFavorite: data[index].isFavorite,
-                                                    index: index)
+                                                    index: 2)
                                 } label: {
                                     ClassList(title: data[index].title,
                                               description: data[index].description)

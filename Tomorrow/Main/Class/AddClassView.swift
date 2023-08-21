@@ -81,7 +81,7 @@ struct AddClassView: View {
                                             .foregroundColor(Color.buttonGray)
                                     )
                             }
-                            Text("사진을 추가해주세요")
+                            Text("Please add a photo")
                                 .font(.pretendard(type: .regular, size: 16))
                                 .padding(.top, 11.5)
                         }
